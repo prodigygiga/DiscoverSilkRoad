@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\Projects\\\\DiscoverSilkRoad\\\\assets\\\\images\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\Projects\\\\DiscoverSilkRoad\\\\assets\\\\css\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\Projects\\\\DiscoverSilkRoad\\\\assets\\\\js\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"d:\\\\Projects\\\\DiscoverSilkRoad\\\\assets\\\\fonts\")"
+    ]
+  }
+}

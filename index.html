@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover Silk Road – Feel, Dream, Discover Georgia. Expert-guided tours across Georgia's most breathtaking landscapes and cultural treasures." />
+  <title>Discover Silk Road | Georgia Tours</title>
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+
+      <a href="#home" class="nav__logo" aria-label="Discover Silk Road – Home">
+        <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M4 28 C8 20, 14 16, 16 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M16 8 C18 14, 24 18, 28 26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="16" cy="7" r="2" fill="currentColor"/>
+          <path d="M10 22 C13 19, 16 20, 20 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+        <span class="nav__logo-text">Discover Silk Road</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="#home"         class="nav__link" data-section="home">Home</a></li>
+        <li><a href="#tours"        class="nav__link" data-section="tours">Tours</a></li>
+        <li><a href="#destinations" class="nav__link" data-section="destinations">Destinations</a></li>
+        <li><a href="#about"        class="nav__link" data-section="about">About</a></li>
+        <li><a href="#gallery"      class="nav__link" data-section="gallery">Gallery</a></li>
+        <li><a href="#contact"      class="nav__link nav__link--cta" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO – HOME
+    ═══════════════════════════════════════════ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <picture class="hero__bg">
+        <source media="(max-width: 480px)"  srcset="assets/images/hero-480.webp,  assets/images/hero-480.jpg"  type="image/webp" />
+        <source media="(max-width: 768px)"  srcset="assets/images/hero-768.webp,  assets/images/hero-768.jpg"  type="image/webp" />
+        <source media="(max-width: 1280px)" srcset="assets/images/hero-1280.webp, assets/images/hero-1280.jpg" type="image/webp" />
+        <img src="assets/images/hero-1920.jpg"
+             srcset="assets/images/hero-1920.webp 1920w, assets/images/hero-1280.webp 1280w, assets/images/hero-768.webp 768w"
+             sizes="100vw"
+             alt="Dramatic mountain landscape of Georgia with a traditional stone house"
+             class="hero__bg-img"
+             loading="eager"
+             fetchpriority="high" />
+      </picture>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow">Georgia Awaits</p>
+        <h1 class="hero__title">Discover<br>Silk Road</h1>
+        <p class="hero__tagline">Feel &bull; Dream &bull; Discover Georgia</p>
+        <div class="hero__actions">
+          <a href="#tours" class="btn btn--outline">Explore Tours</a>
+          <a href="#destinations" class="btn btn--filled">Discover Georgia</a>
+        </div>
+      </div>
+
+      <a href="#tours" class="hero__scroll" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TOURS
+    ═══════════════════════════════════════════ -->
+    <section class="tours section" id="tours" aria-labelledby="tours-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Curated Experiences</span>
+          <h2 class="section__title" id="tours-heading">Our Tours</h2>
+          <p class="section__subtitle">Hand-crafted itineraries that take you deep into Georgia's soul — from alpine meadows to ancient wine cellars.</p>
+        </header>
+
+        <div class="tours__grid">
+
+          <article class="tour-card">
+            <div class="tour-card__img-wrap">
+              <picture>
+                <source type="image/webp" srcset="assets/images/tour-classic-georgia.webp" />
+                <img src="assets/images/tour-classic-georgia.jpg"
+                     alt="Classic Georgia tour – mountain village path"
+                     class="tour-card__img"
+                     loading="lazy"
+                     width="600" height="400" />
+              </picture>
+              <span class="tour-card__badge">Bestseller</span>
+            </div>
+            <div class="tour-card__body">
+              <span class="tour-card__duration">10 Days</span>
+              <h3 class="tour-card__title">Classic Georgia</h3>
+              <p class="tour-card__desc">Tbilisi's old town, the Caucasus highlands of Kazbegi, and the wine-soaked valleys of Kakheti in one unforgettable journey.</p>
+              <div class="tour-card__footer">
+                <span class="tour-card__price">From <strong>$1,290</strong></span>
+                <a href="#contact" class="btn btn--sm btn--filled">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tour-card">
+            <div class="tour-card__img-wrap">
+              <picture>
+                <source type="image/webp" srcset="assets/images/tour-black-sea.webp" />
+                <img src="assets/images/tour-black-sea.jpg"
+                     alt="Black Sea coast – Batumi skyline at sunset"
+                     class="tour-card__img"
+                     loading="lazy"
+                     width="600" height="400" />
+              </picture>
+            </div>
+            <div class="tour-card__body">
+              <span class="tour-card__duration">7 Days</span>
+              <h3 class="tour-card__title">Black Sea & Batumi</h3>
+              <p class="tour-card__desc">Azure waters, subtropical flora, and a vibrant city where Soviet Art Deco meets futuristic architecture.</p>
+              <div class="tour-card__footer">
+                <span class="tour-card__price">From <strong>$890</strong></span>
+                <a href="#contact" class="btn btn--sm btn--filled">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tour-card">
+            <div class="tour-card__img-wrap">
+              <picture>
+                <source type="image/webp" srcset="assets/images/tour-wine-heritage.webp" />
+                <img src="assets/images/tour-wine-heritage.jpg"
+                     alt="Kakheti vineyards at golden hour"
+                     class="tour-card__img"
+                     loading="lazy"
+                     width="600" height="400" />
+              </picture>
+              <span class="tour-card__badge">New</span>
+            </div>
+            <div class="tour-card__body">
+              <span class="tour-card__duration">5 Days</span>
+              <h3 class="tour-card__title">Wine & Heritage Trail</h3>
+              <p class="tour-card__desc">The world's oldest winemaking region — taste qvevri-aged amber wines and stay in centuries-old guesthouses.</p>
+              <div class="tour-card__footer">
+                <span class="tour-card__price">From <strong>$695</strong></span>
+                <a href="#contact" class="btn btn--sm btn--filled">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="tour-card">
+            <div class="tour-card__img-wrap">
+              <picture>
+                <source type="image/webp" srcset="assets/images/tour-silk-road.webp" />
+                <img src="assets/images/tour-silk-road.jpg"
+                     alt="Rabati Castle fortress in Akhaltsikhe"
+                     class="tour-card__img"
+                     loading="lazy"
+                     width="600" height="400" />
+              </picture>
+            </div>
+            <div class="tour-card__body">
+              <span class="tour-card__duration">14 Days</span>
+              <h3 class="tour-card__title">Silk Road Grand Tour</h3>
+              <p class="tour-card__desc">Follow the ancient trade route through Tbilisi, Mtskheta, Vardzia cave city, Akhaltsikhe, and beyond.</p>
+              <div class="tour-card__footer">
+                <span class="tour-card__price">From <strong>$2,100</strong></span>
+                <a href="#contact" class="btn btn--sm btn--filled">Book Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         DESTINATIONS
+    ═══════════════════════════════════════════ -->
+    <section class="destinations section section--cream" id="destinations" aria-labelledby="destinations-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Explore Georgia</span>
+          <h2 class="section__title" id="destinations-heading">Top Destinations</h2>
+        </header>
+
+        <div class="destinations__grid">
+
+          <article class="dest-card">
+            <a href="#contact" class="dest-card__link" aria-label="Explore Batumi">
+              <div class="dest-card__img-wrap">
+                <picture>
+                  <source media="(max-width: 480px)"  type="image/webp" srcset="assets/images/dest-batumi-480.webp" />
+                  <source media="(max-width: 768px)"  type="image/webp" srcset="assets/images/dest-batumi-768.webp" />
+                  <source type="image/webp" srcset="assets/images/dest-batumi.webp" />
+                  <img src="assets/images/dest-batumi.jpg"
+                       srcset="assets/images/dest-batumi.jpg 600w, assets/images/dest-batumi-768.jpg 400w"
+                       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 25vw"
+                       alt="Batumi Black Sea coast at sunset with golden sky reflections"
+                       class="dest-card__img"
+                       loading="lazy"
+                       width="600" height="700" />
+                </picture>
+                <div class="dest-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="dest-card__label">
+                <h3 class="dest-card__name">Batumi</h3>
+                <span class="dest-card__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="dest-card">
+            <a href="#contact" class="dest-card__link" aria-label="Explore Kazbegi">
+              <div class="dest-card__img-wrap">
+                <picture>
+                  <source media="(max-width: 480px)"  type="image/webp" srcset="assets/images/dest-kazbegi-480.webp" />
+                  <source type="image/webp" srcset="assets/images/dest-kazbegi.webp" />
+                  <img src="assets/images/dest-kazbegi.jpg"
+                       srcset="assets/images/dest-kazbegi.jpg 600w, assets/images/dest-kazbegi-480.jpg 400w"
+                       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 25vw"
+                       alt="Kazbegi mountain peaks with Gergeti Trinity Church"
+                       class="dest-card__img"
+                       loading="lazy"
+                       width="600" height="700" />
+                </picture>
+                <div class="dest-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="dest-card__label">
+                <h3 class="dest-card__name">Kazbegi</h3>
+                <span class="dest-card__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="dest-card">
+            <a href="#contact" class="dest-card__link" aria-label="Explore Kakheti">
+              <div class="dest-card__img-wrap">
+                <picture>
+                  <source media="(max-width: 480px)"  type="image/webp" srcset="assets/images/dest-kakheti-480.webp" />
+                  <source type="image/webp" srcset="assets/images/dest-kakheti.webp" />
+                  <img src="assets/images/dest-kakheti.jpg"
+                       srcset="assets/images/dest-kakheti.jpg 600w, assets/images/dest-kakheti-480.jpg 400w"
+                       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 25vw"
+                       alt="Kakheti wine region with Orthodox church and misty mountains"
+                       class="dest-card__img"
+                       loading="lazy"
+                       width="600" height="700" />
+                </picture>
+                <div class="dest-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="dest-card__label">
+                <h3 class="dest-card__name">Kakheti</h3>
+                <span class="dest-card__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="dest-card">
+            <a href="#contact" class="dest-card__link" aria-label="Explore Rabati Castle">
+              <div class="dest-card__img-wrap">
+                <picture>
+                  <source media="(max-width: 480px)"  type="image/webp" srcset="assets/images/dest-rabati-480.webp" />
+                  <source type="image/webp" srcset="assets/images/dest-rabati.webp" />
+                  <img src="assets/images/dest-rabati.jpg"
+                       srcset="assets/images/dest-rabati.jpg 600w, assets/images/dest-rabati-480.jpg 400w"
+                       sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 25vw"
+                       alt="Rabati Castle fortress overlooking Akhaltsikhe"
+                       class="dest-card__img"
+                       loading="lazy"
+                       width="600" height="700" />
+                </picture>
+                <div class="dest-card__overlay" aria-hidden="true"></div>
+              </div>
+              <div class="dest-card__label">
+                <h3 class="dest-card__name">Rabati Castle</h3>
+                <span class="dest-card__arrow" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="destinations__more">
+          <a href="#contact" class="btn btn--outline-dark">View All Destinations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════════ -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__grid">
+
+          <div class="about__media">
+            <picture class="about__img-main">
+              <source type="image/webp" srcset="assets/images/about-landscape.webp" />
+              <img src="assets/images/about-landscape.jpg"
+                   alt="Georgian guide leading travellers through a high-altitude meadow"
+                   loading="lazy"
+                   width="600" height="750" />
+            </picture>
+            <picture class="about__img-accent">
+              <source type="image/webp" srcset="assets/images/about-culture.webp" />
+              <img src="assets/images/about-culture.jpg"
+                   alt="Traditional Georgian polyphonic choir performance"
+                   loading="lazy"
+                   width="300" height="380" />
+            </picture>
+          </div>
+
+          <div class="about__content">
+            <span class="section__eyebrow">Our Story</span>
+            <h2 class="section__title" id="about-heading">Born on the Silk Road</h2>
+            <p class="about__text">We are a team of passionate Georgian guides, storytellers, and adventure lovers who believe that travel is the most powerful way to connect cultures. Since 2012, we've been crafting authentic journeys that go beyond the postcard — into the kitchens, monasteries, and mountain trails that make Georgia unlike anywhere else on earth.</p>
+            <p class="about__text">Every itinerary is built around genuine human encounters: a winemaker sharing his family's ancient recipe, a shepherd whose flock has grazed these hills for generations, a chef who transforms simple ingredients into a feast.</p>
+
+            <ul class="about__stats" aria-label="Company statistics">
+              <li class="about__stat">
+                <strong class="about__stat-number">12+</strong>
+                <span class="about__stat-label">Years Experience</span>
+              </li>
+              <li class="about__stat">
+                <strong class="about__stat-number">4,800+</strong>
+                <span class="about__stat-label">Happy Travellers</span>
+              </li>
+              <li class="about__stat">
+                <strong class="about__stat-number">30+</strong>
+                <span class="about__stat-label">Unique Routes</span>
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn btn--filled">Plan Your Journey</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         GALLERY
+    ═══════════════════════════════════════════ -->
+    <section class="gallery section section--cream" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">Visual Journey</span>
+          <h2 class="section__title" id="gallery-heading">Gallery</h2>
+          <p class="section__subtitle">A glimpse of the landscapes, culture, and moments waiting for you in Georgia.</p>
+        </header>
+
+        <div class="gallery__grid" role="list">
+
+          <figure class="gallery__item gallery__item--wide" role="listitem">
+            <picture>
+              <source type="image/webp" srcset="assets/images/gallery-01.webp" />
+              <img src="assets/images/gallery-01.jpg"
+                   alt="Panoramic view of the Greater Caucasus range from Stepantsminda"
+                   loading="lazy"
+                   width="900" height="600" />
+            </picture>
+            <figcaption class="gallery__caption">Greater Caucasus, Kazbegi</figcaption>
+          </figure>
+
+          <figure class="gallery__item" role="listitem">
+            <picture>
+              <source type="image/webp" srcset="assets/images/gallery-02.webp" />
+              <img src="assets/images/gallery-02.jpg"
+                   alt="Old Tbilisi balconies covered in carved wood"
+                   loading="lazy"
+                   width="600" height="600" />
+            </picture>
+            <figcaption class="gallery__caption">Old Tbilisi</figcaption>
+          </figure>
+
+          <figure class="gallery__item" role="listitem">
+            <picture>
+              <source type="image/webp" srcset="assets/images/gallery-03.webp" />
+              <img src="assets/images/gallery-03.jpg"
+                   alt="Colourful qvevri clay wine vessels in a Kakheti cellar"
+                   loading="lazy"
+                   width="600" height="600" />
+            </picture>
+            <figcaption class="gallery__caption">Qvevri Wine, Kakheti</figcaption>
+          </figure>
+
+          <figure class="gallery__item" role="listitem">
+            <picture>
+              <source type="image/webp" srcset="assets/images/gallery-04.webp" />
+              <img src="assets/images/gallery-04.jpg"
+                   alt="Traditional Georgian supra feast spread on a wooden table"
+                   loading="lazy"
+                   width="600" height="600" />
+            </picture>
+            <figcaption class="gallery__caption">Georgian Supra</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--tall" role="listitem">
+            <picture>
+              <source type="image/webp" srcset="assets/images/gallery-05.webp" />
+              <img src="assets/images/gallery-05.jpg"
+                   alt="Gergeti Trinity Church silhouetted against a dramatic sky"
+                   loading="lazy"
+                   width="600" height="900" />
+            </picture>
+            <figcaption class="gallery__caption">Gergeti Trinity Church</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--wide" role="listitem">
+            <picture>
+              <source type="image/webp" srcset="assets/images/gallery-06.webp" />
+              <img src="assets/images/gallery-06.jpg"
+                   alt="Batumi seafront promenade at dusk"
+                   loading="lazy"
+                   width="900" height="600" />
+            </picture>
+            <figcaption class="gallery__caption">Batumi Seafront</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         TESTIMONIALS (bonus section)
+    ═══════════════════════════════════════════ -->
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <header class="section__header">
+          <span class="section__eyebrow">What Travellers Say</span>
+          <h2 class="section__title" id="testimonials-heading">Stories from the Road</h2>
+        </header>
+
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <p class="testimonial__text">"The Classic Georgia tour exceeded every expectation. Our guide Giorgi knew every monastery, every shortcut, every restaurant where locals actually eat. This is not a cookie-cutter tour."</p>
+            <footer class="testimonial__footer">
+              <picture class="testimonial__avatar">
+                <source type="image/webp" srcset="assets/images/testimonial-01.webp" />
+                <img src="assets/images/testimonial-01.jpg" alt="Sarah M." loading="lazy" width="56" height="56" />
+              </picture>
+              <div>
+                <cite class="testimonial__name">Sarah M.</cite>
+                <span class="testimonial__origin">London, UK</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial__text">"We did the Silk Road Grand Tour as a family. The kids were mesmerised by Vardzia cave city, my husband loved the wine, and I cannot stop thinking about the scenery. Already planning our return."</p>
+            <footer class="testimonial__footer">
+              <picture class="testimonial__avatar">
+                <source type="image/webp" srcset="assets/images/testimonial-02.webp" />
+                <img src="assets/images/testimonial-02.jpg" alt="Anna K." loading="lazy" width="56" height="56" />
+              </picture>
+              <div>
+                <cite class="testimonial__name">Anna K.</cite>
+                <span class="testimonial__origin">Munich, Germany</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial__text">"A perfectly organised trip with attention to every detail. The guesthouses, the food, the pace — all felt exactly right. Batumi at sunset from a rooftop is something I'll never forget."</p>
+            <footer class="testimonial__footer">
+              <picture class="testimonial__avatar">
+                <source type="image/webp" srcset="assets/images/testimonial-03.webp" />
+                <img src="assets/images/testimonial-03.jpg" alt="James R." loading="lazy" width="56" height="56" />
+              </picture>
+              <div>
+                <cite class="testimonial__name">James R.</cite>
+                <span class="testimonial__origin">New York, USA</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════════ -->
+    <section class="contact section section--dark" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__grid">
+
+          <div class="contact__info">
+            <span class="section__eyebrow section__eyebrow--light">Get in Touch</span>
+            <h2 class="section__title contact__title" id="contact-heading">Start Your<br>Georgia Adventure</h2>
+            <p class="contact__text">Have a question about a tour, a custom itinerary in mind, or just want to know more about this extraordinary country? We're here to help.</p>
+
+            <ul class="contact__details" aria-label="Contact details">
+              <li class="contact__detail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Rustaveli Ave 42, Tbilisi, Georgia</span>
+              </li>
+              <li class="contact__detail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                </svg>
+                <a href="tel:+995599000000">+995 599 000 000</a>
+              </li>
+              <li class="contact__detail">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <a href="mailto:info@discoversilkroad.com">info@discoversilkroad.com</a>
+              </li>
+            </ul>
+
+            <div class="contact__social" aria-label="Social media links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact__form-wrap">
+            <form class="contact__form" id="contact-form" novalidate>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="first-name">First Name</label>
+                  <input class="form__input" type="text" id="first-name" name="first_name" placeholder="John" required autocomplete="given-name" />
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="last-name">Last Name</label>
+                  <input class="form__input" type="text" id="last-name" name="last_name" placeholder="Doe" required autocomplete="family-name" />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="email">Email Address</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="tour-interest">Interested In</label>
+                <select class="form__input form__select" id="tour-interest" name="tour_interest">
+                  <option value="" disabled selected>Select a tour or destination…</option>
+                  <option value="classic-georgia">Classic Georgia (10 Days)</option>
+                  <option value="black-sea">Black Sea &amp; Batumi (7 Days)</option>
+                  <option value="wine-heritage">Wine &amp; Heritage Trail (5 Days)</option>
+                  <option value="silk-road-grand">Silk Road Grand Tour (14 Days)</option>
+                  <option value="custom">Custom Itinerary</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="message">Message</label>
+                <textarea class="form__input form__textarea" id="message" name="message" rows="4" placeholder="Tell us about your travel dates, group size, or any special requests…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--filled btn--full">Send Message</button>
+              <p class="form__note">We typically respond within 24 hours.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="#home" class="nav__logo footer__logo" aria-label="Discover Silk Road">
+            <svg class="nav__logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M4 28 C8 20, 14 16, 16 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M16 8 C18 14, 24 18, 28 26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <circle cx="16" cy="7" r="2" fill="currentColor"/>
+              <path d="M10 22 C13 19, 16 20, 20 18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+            <span class="nav__logo-text">Discover Silk Road</span>
+          </a>
+          <p class="footer__tagline">Feel &bull; Dream &bull; Discover Georgia</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <h3 class="footer__nav-title">Pages</h3>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__nav" aria-label="Top destinations">
+          <h3 class="footer__nav-title">Destinations</h3>
+          <ul role="list">
+            <li><a href="#destinations">Tbilisi</a></li>
+            <li><a href="#destinations">Kazbegi</a></li>
+            <li><a href="#destinations">Batumi</a></li>
+            <li><a href="#destinations">Kakheti</a></li>
+            <li><a href="#destinations">Rabati Castle</a></li>
+            <li><a href="#destinations">Vardzia</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <h3 class="footer__nav-title">Contact</h3>
+          <p>Rustaveli Ave 42<br>Tbilisi, Georgia</p>
+          <a href="tel:+995599000000">+995 599 000 000</a><br />
+          <a href="mailto:info@discoversilkroad.com">info@discoversilkroad.com</a>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year"></span> Discover Silk Road. All rights reserved.</p>
+        <p>Made with love in Georgia 🇬🇪</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
